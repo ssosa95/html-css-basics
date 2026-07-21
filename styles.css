@@ -31,7 +31,35 @@ h2 {
 }
 
 .box {
-    width: 500px;
+    width: 1080px;
     padding: 20px;
     margin: 15px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white
 }
