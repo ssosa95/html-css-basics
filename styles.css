@@ -4,6 +4,9 @@ h1 {
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .highlight {
@@ -30,28 +33,12 @@ h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.box {
-    width: 1080px;
-    padding: 20px;
-    margin: 15px;
-}
 
 .footer {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: flex-end;
     gap: 10px;
-    list-style-type: none;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 25px;
-}
-
-.footer li {
     list-style-type: none;
 }
 
@@ -61,5 +48,27 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    background-color: white
+    background-color: white;
+}
+
+.grid-example {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #9cc3e5;
+    padding: 20px;
+    text-align: center;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 25px;
+}
+
+.description img {
+    width: 100%;
 }
