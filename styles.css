@@ -19,10 +19,12 @@ body {
 }
 
 .card {
-    width: 500px;
+    display: grid;
+    max-width: 500px;
     padding: 25px;
     border: 2px solid #333;
     margin: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 p {
@@ -53,7 +55,7 @@ h2 {
 
 .grid-example {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
 
@@ -71,4 +73,18 @@ h2 {
 
 .description img {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header,
+    .footer {
+        flex-direction: column;
+    }
+}
+
+.box {
+    max-width: 500px;
+    padding: 25px;
+    border: 2px solid #333;
+    margin: 5px;
 }
