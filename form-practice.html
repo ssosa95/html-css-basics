@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This single line is what tells the browser "actually render at the device's real width." -->
+    <title>Form Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <header id="site-header">
+        <h1>Welcome!</h1>       
+    </header>
+    <form>
+    <main>
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <!-- select, checkbox, etc. -->
+        
+        </section>
+        <section>
+            <p>What is your favourite dessert?</p>
+            
+            <select id="dessert" name="dessert">
+                <option value="" disabled selected>Select one</option>
+                <option value="cookies-milk">Cookies and milk</option>
+                <option value="tiramisu">Tiramisu</option>
+                <option value="cake-chocolate">Chocolate cake</option>
+                <option value="ice-cream">Ice cream</option>
+
+            </select>
+            
+        </section>
+        <section>
+            <p>How many of these apply to you?</p>
+            
+            <input type="checkbox" id="EU-born" name="EU-born">
+            <label for="EU-born">EU born</label>      
+
+            <input type="checkbox" id="Likes-sports" name="Likes-sports">      
+            <label for="Likes-sports">Likes sports</label>
+
+            <input type="checkbox" id="Brown-hair" name="Brown-hair">
+            <label for="Brown-hair">Brown hair</label>
+
+            <input type="checkbox" id="Drinks-coffee" name="Drinks-coffee">
+            <label for="Drinks-coffee">Drinks coffee</label>
+            
+        </section>
+    </main>
+</form>
+</body>
+
+</html>
