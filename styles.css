@@ -1,5 +1,5 @@
 h1 {
-    color: #066bef;
+    color: var(--primary-color);
     padding: 10px;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 .highlight {
-    color: #066bef;
+    color: var(--primary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -22,9 +22,9 @@ body {
 .card {
     display: grid;
     max-width: 500px;
-    padding: 25px;
-    border: 2px solid #333;
-    margin: 5px;
+    padding: var(--spacing-padding);
+    border: 2px solid var(--border-color);
+    margin: var(--spacing-margin);
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
@@ -41,7 +41,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 10px;
+    gap: var(--spacing-gap);
     list-style-type: none;
 }
 
@@ -50,14 +50,14 @@ h2 {
     list-style-type: none;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: var(--spacing-gap);
     background-color: white;
 }
 
 .grid-example {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    gap: var(--spacing-gap);
 }
 
 .grid-item {
@@ -85,9 +85,9 @@ h2 {
 
 .box {
     max-width: 500px;
-    padding: 25px;
-    border: 2px solid #333;
-    margin: 5px;
+    padding: var(--spacing-padding);
+    border: 2px solid var(--border-color);
+    margin: var(--spacing-margin);
 }
 
 .button {
@@ -100,18 +100,48 @@ h2 {
 }
 
 input[type="checkbox"]:focus {
-    outline: 2px dashed #066bef;
+    outline: 2px dashed var(--primary-color);
     outline-offset: 2px;
 }
 
-.header a:hover {
-    color: blue;
+.header a:link,
+.footer a:link,
+.grid-example a:link,
+p a:link {
+    color: var(--link-color);
 }
 
-.footer a:hover {
-    color: blue;
+.header a:visited,
+.footer a:visited,
+.grid-example a:visited,
+p a:visited {
+    color: var(--link-visited-color);
 }
 
-.grid-example a:hover{
-    color: blue;
+.header a:hover,
+.footer a:hover,
+.grid-example a:hover,
+p a:hover {
+    color: var(--primary-color);
 }
+
+
+
+:root {
+    --primary-color: #066bef;
+    --border-color: #333; 
+    --spacing-gap: 10px;
+    --spacing-padding: 25px;
+    --spacing-margin: 5px;
+    --link-active-color: #00ffff;
+    --link-visited-color: green;
+    --link-color: rgba(90, 77, 4, 0.9);
+}
+
+.header a:active,
+.footer a:active,
+.grid-example a:active,
+p a:active {
+    color: var(--link-active-color);
+}
+
