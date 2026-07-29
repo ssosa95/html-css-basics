@@ -93,6 +93,8 @@ h2 {
 .button {
       background-color: whitesmoke;
       transition: background-color 0.3s ease;
+      display: block;
+      margin-top: 10px;
 }
 
 .button:hover {
@@ -136,6 +138,8 @@ p a:hover {
     --link-active-color: #00ffff;
     --link-visited-color: green;
     --link-color: rgba(90, 77, 4, 0.9);
+    --section-margin: 5px;
+    --label-font-size: 0.9rem;
 }
 
 .header a:active,
@@ -145,3 +149,14 @@ p a:active {
     color: var(--link-active-color);
 }
 
+section {
+    margin: var(--section-margin);
+}
+
+input[type="checkbox"] + label {
+    font-size: var(--label-font-size);
+}
+
+.label-font-size {
+    font-size: var(--label-font-size);
+}
