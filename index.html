@@ -41,18 +41,22 @@
         </section>
     </main>
     <footer>
-    <form>
         <section>
             <h2 class="highlight">Are you interested in following my journey?</h2>
             <p>This is my <a href="https://github.com/ssosa95">GitHub</a>.</p>
             <p>If you wish to sign up for my mailing list, please provide your information below:</p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-
-            <!-- select, checkbox, etc. -->
+            <form>
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div> 
+            
             <p>Of these, what are you learning now?</p>
             
             <select id="topic" name="topic">
@@ -83,8 +87,10 @@
             <label for="other-checkbox">Other</label>
 
             <button type="submit" class="button">Send</button>
-    </form>
+            </form>
         </section>
+    
+        
         <section>
             <div class="description">
                 <img src="images/wang-lin-renegade-immortal.jpg" alt="This is Wang Lin.">
