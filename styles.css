@@ -92,6 +92,16 @@ h2 {
     }
 }
 
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-row {
+    margin-bottom: var(--spacing-gap);
+}
+
 .box {
     max-width: 500px;
     padding: var(--spacing-padding);
